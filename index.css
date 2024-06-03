@@ -1,0 +1,242 @@
+*{
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color:chocolate;
+}
+
+h1{font-size : 3.5 em;}
+h2{font-size: 2.7 em;}
+h3{font-size: 2 em;}
+p{font-size: 1.25 em;}
+
+ul{list-style: none;}
+li{font-size: 1.25 em;}
+
+button{
+    font-size: 1.5 em;
+    font-weight:bold;
+    padding: 10px 20px;
+    border-radius: 7 px;
+    border: 1 px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px yellowgreen;
+    color:white;
+    background-color: crimson;
+
+}
+
+button:hover{
+
+    background-color:rgb(124, 11, 34);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.color-acento{color:chartreuse;
+
+}
+
+header{
+    background-color:beige;
+}
+
+header .logo{
+    margin:0;
+    padding: 25 px 30 px;
+    font-weight: bold;
+    color:chartreuse;
+    font-size: 1.6 em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25 px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+header a:hover{
+    color:darkgoldenrod
+}
+
+#hero{
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url("code1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#soy h2{
+
+    font-size:x-large;
+    text-align: center;
+
+}
+
+#soy p{
+
+    font-size:medium;
+    text-align: center;
+}
+
+
+#soy .container{
+    text-align: center;
+    padding: 200 px 12px;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+
+}
+
+#datoslaborales{
+
+    background-color: darkkhaki;
+    color: black;
+
+}
+#datoslaborales .container{
+    text-align: center;
+    padding: 100 px 0px;
+
+#datoslaborales h2{
+    margin-top:0;
+    font-size: 3em;
+}
+}
+
+datoslaborales p{
+    display: none;
+}
+
+#datoslaborales .carta{
+
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20 px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image:url("programador.jpg");
+
+}
+
+.carta:nth-child(2){
+
+    background-image:url("programador1.jpg");
+}
+
+.carta:nth-child(3){
+
+    background-image:url("programar2.avif");
+}
+
+#academicos .container{
+
+    text-align: center;
+    padding: 250px 12px;
+
+
+}
+
+#academicos li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+}
+
+#personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: seagreen;
+    color: black;
+    height: 80vh;
+}
+
+#personales h4{
+    font-size: medium;
+}
+
+#personales button{
+
+    font-size: 1.75em;
+}
+
+footer{
+
+    background-color: gray;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color:blueviolet;
+}
+
+footer .container{
+
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+@media (mind-with: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    
+}
